@@ -1,6 +1,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "EditorStyleSet.h"
+#include "Framework/Commands/Commands.h"
 
 class FEditorCommands_GenericGraph : public TCommands<FEditorCommands_GenericGraph>
 {

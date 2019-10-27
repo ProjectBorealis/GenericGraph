@@ -37,6 +37,7 @@ public class GenericGraphEditor : ModuleRules
                 "AssetTools",
                 "Slate",
                 "SlateCore",
+                "InputCore",
                 "GraphEditor",
                 "PropertyEditor",
                 "EditorStyle",
