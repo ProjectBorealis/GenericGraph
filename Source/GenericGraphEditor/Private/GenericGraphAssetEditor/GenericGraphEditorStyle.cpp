@@ -1,4 +1,6 @@
 #include "GenericGraphAssetEditor/GenericGraphEditorStyle.h"
+
+#include "Interfaces/IPluginManager.h"
 #include "Styling/SlateStyleRegistry.h"
 #include "Styling/SlateTypes.h"
 #include "Misc/Paths.h"
@@ -23,7 +25,7 @@ void FGenericGraphEditorStyle::Initialize()
 
 	StyleSet = MakeShareable(new FSlateStyleSet("GenericGraphEditorStyle"));
 
-	StyleSet->SetContentRoot(FPaths::ProjectPluginsDir() / TEXT("GenericGraph/Resources"));
+	StyleSet->SetContentRoot(IPluginManager::Get().FindPlugin("GenericGraph")->GetBaseDir() / TEXT("Resources"));
 
 	StyleSet->Set("GenericGraphEditor.AutoArrange", new IMAGE_BRUSH("AutoArrangeIcon", Icon40x40));
 
