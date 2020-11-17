@@ -28,7 +28,6 @@ public class GenericGraphEditor : ModuleRules
 				"CoreUObject",
                 "Engine",
                 "UnrealEd",
-				""
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
