@@ -28,6 +28,7 @@ public class GenericGraphEditor : ModuleRules
 				"CoreUObject",
                 "Engine",
                 "UnrealEd",
+				""
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -47,6 +48,7 @@ public class GenericGraphEditor : ModuleRules
                 "KismetWidgets",
                 "ApplicationCore",
 				"ToolMenus",
+				"Projects",
 				// ... add private dependencies that you statically link with here ...
 			}
 			);
